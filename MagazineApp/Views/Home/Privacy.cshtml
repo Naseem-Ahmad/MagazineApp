@@ -1,6 +1,64 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<section class="container py-5" style="max-width: 900px;">
+    <div class="card border-0 shadow-sm rounded-4" style="background-color: #fafafa;">
+        <div class="card-body p-4 p-md-5">
+
+            <h2 class="fw-semibold text-dark mb-3">@ViewData["Title"]</h2>
+            <p class="text-secondary small mb-5">
+                Last updated: @DateTime.Now.ToString("MMMM dd, yyyy")
+            </p>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold text-dark mb-2">1. Data Collection</h5>
+                <p class="text-secondary" style="font-size: 0.95rem;">
+                    As of now, our magazine does <strong>not collect, store, or process any personal data</strong> from visitors or readers.
+                    Your interaction with our platform is entirely anonymous and free from any form of data tracking.
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold text-dark mb-2">2. Future Data Collection</h5>
+                <p class="text-secondary" style="font-size: 0.95rem;">
+                    In the future, if we choose to collect data, it will be done <strong>solely for analytical and improvement purposes</strong>.
+                    This may include non-personal information such as visit statistics or general engagement metrics to help us enhance
+                    content quality and user experience. Any data collected will be handled responsibly and transparently.
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold text-dark mb-2">3. Cookies</h5>
+                <p class="text-secondary" style="font-size: 0.95rem;">
+                    Currently, we do not use cookies or any tracking technologies.
+                    If cookies are implemented in the future, users will be notified, and options will be provided to manage cookie preferences.
+                </p>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold text-dark mb-2">4. Updates to This Policy</h5>
+                <p class="text-secondary" style="font-size: 0.95rem;">
+                    This Privacy Policy may be updated periodically to reflect new features or legal requirements.
+                    We encourage users to review this page occasionally to stay informed about any changes.
+                </p>
+            </div>
+
+            <div>
+                <h5 class="fw-semibold text-dark mb-2">5. Contact Us</h5>
+                <p class="text-secondary" style="font-size: 0.95rem;">
+                    If you have any questions or concerns regarding this Privacy Policy, please contact us at
+                    <a href="mailto:naseemahmad6504@gmail.com" class="text-decoration-none text-dark fw-semibold">
+                        naseemahmad6504@gmail.com
+                    </a>.
+                </p>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="text-center small text-muted">
+                © @DateTime.Now.Year Magazine — All rights reserved.
+            </div>
+        </div>
+    </div>
+</section>
